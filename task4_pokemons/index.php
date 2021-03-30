@@ -26,7 +26,7 @@ Write here which group you would like to display</label>
     echo "<p>The total number of availiable pokemons is " . count($pokemons_array) . "</p>";
 
 
-if ($_GET != null) {
+if ($_GET != null && $_GET['group'] != null ) {
     $counter = 0;
     $pokemons_group = $_GET['group'];
 
