@@ -20,9 +20,12 @@
     </form>
 
     <?php 
+    
+    if ($_GET != null) {
     echo "The sum of the numbers is: ";
    echo $_GET["num1"] + $_GET["num2"];
 //note that submitted information appears in url of the page
+    };
     ?>
 
 </body>

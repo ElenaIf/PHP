@@ -21,9 +21,11 @@
 </form>
 
 <?php
+if ($_GET != null) {
 //name inside GET should be the same as name attribute in the form input. NOT id
     echo "<p>Your name is: " . $_GET["userName"] . "</p>";
     echo "<p>Your age is: " . $_GET["age"] . "</p>";
+};
     ?>
 
 </body>

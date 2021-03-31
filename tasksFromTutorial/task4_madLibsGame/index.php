@@ -28,6 +28,8 @@
 
 <?php
 
+if ($_GET != null) {
+
 $color = $_GET["color"];
 $flowers = $_GET["flowers"];
 $verb = $_GET["verb"];
@@ -38,6 +40,7 @@ echo "<p>$flowers are blue</p>";
 echo "<p>I don't $verb at night</p>";
 echo "<p>Cause I'm thinking of $someone</p>";
 
+};
 ?>
 
 </body>
