@@ -22,215 +22,215 @@
 
     <?php
 
-    $number = random_int(0, 100);
+$number = random_int(0, 100);
 
-    $stringNumber = strval($number);
+$stringNumber = strval($number);
 
-    $firstDigit = intval(substr($stringNumber, 0, 1));
-    $secondDigit = intval(substr($stringNumber, 1));
+$firstDigit = intval(substr($stringNumber, 0, 1));
+$secondDigit = intval(substr($stringNumber, 1));
 
-    echo "<p>Random number is:</p>";
+echo "<p>Random number is:</p>";
 
-    // echo "<p>Random number is $number </p>";
+// echo "<p>Random number is $number </p>";
 
-    // echo "First part is $firstDigit";
-    // echo "<br>";
-    // echo "Last part is $secondDigit";
-    // echo "<br>";
+// echo "First part is $firstDigit";
+// echo "<br>";
+// echo "Last part is $secondDigit";
+// echo "<br>";
 
-    $numberFirstPart;
-    $numberLastPart;
+$numberFirstPart;
+$numberLastPart;
 
-    $zero = "nolla";
-    $one = "yksi";
-    $two = "kaksi";
-    $three = "kolme";
-    $four = "neljä";
-    $five = "viisi";
-    $six = "kuusi";
-    $seven = "seitsemän";
-    $eight = "kahdeksan";
-    $nine = "yhdeksän";
-    $ten = "kymmenen";
-    $hundred = "sata";
-    $tens = "kymmentä";
-    $toista = "toista";
+$zero = "nolla";
+$one = "yksi";
+$two = "kaksi";
+$three = "kolme";
+$four = "neljä";
+$five = "viisi";
+$six = "kuusi";
+$seven = "seitsemän";
+$eight = "kahdeksan";
+$nine = "yhdeksän";
+$ten = "kymmenen";
+$hundred = "sata";
+$tens = "kymmentä";
+$toista = "toista";
 
-    if ($number <= 10 || $number === 100) {
-        switch ($number) {
-          case 0:
-            echo "$number  - " .  $zero;
+if ($number <= 10 || $number === 100) {
+    switch ($number) {
+        case 0:
+            echo "$number  - " . $zero;
             break;
-          case 1:
-            echo "$number  - " .  $one;
+        case 1:
+            echo "$number  - " . $one;
             break;
-          case 2:
-            echo "$number  - " .  $two;
+        case 2:
+            echo "$number  - " . $two;
             break;
-          case 3:
-            echo "$number  - " .  $three;
+        case 3:
+            echo "$number  - " . $three;
             break;
-          case 4:
-            echo "$number  - " .  $four;
+        case 4:
+            echo "$number  - " . $four;
             break;
-          case 5:
-            echo "$number  - " .  $five;
+        case 5:
+            echo "$number  - " . $five;
             break;
-          case 6:
-            echo "$number  - " .  $six;
+        case 6:
+            echo "$number  - " . $six;
             break;
-          case 7:
-            echo "$number  - " .  $seven;
+        case 7:
+            echo "$number  - " . $seven;
             break;
-          case 8:
-            echo "$number  - " .  $eight;
+        case 8:
+            echo "$number  - " . $eight;
             break;
-          case 9:
-            echo "$number  - " .  $nine;
+        case 9:
+            echo "$number  - " . $nine;
             break;
-          case 10:
-            echo "$number  - " .  $ten;
+        case 10:
+            echo "$number  - " . $ten;
             break;
-          case 100:
-            echo "$number  - " .  $hundred;
+        case 100:
+            echo "$number  - " . $hundred;
             break;
-          default:
+        default:
             echo "Error";
             break;
-        }
-      } elseif ($number % 10 === 0 && $number !== 10 && $number !== 100) {
-        switch ($number) {
-          case 20:
+    }
+} elseif ($number % 10 === 0 && $number !== 10 && $number !== 100) {
+    switch ($number) {
+        case 20:
             echo "$number - " . $two . $tens;
             break;
-          case 30:
+        case 30:
             echo "$number - " . $three . $tens;
             break;
-          case 40:
+        case 40:
             echo "$number - " . $four . $tens;
             break;
-          case 50:
+        case 50:
             echo "$number - " . $five . $tens;
             break;
-          case 60:
+        case 60:
             echo "$number - " . $six . $tens;
             break;
-          case 70:
+        case 70:
             echo "$number - " . $seven . $tens;
             break;
-          case 80:
+        case 80:
             echo "$number - " . $eight . $tens;
             break;
-          case 90:
+        case 90:
             echo "$number - " . $nine . $tens;
             break;
-          default:
+        default:
             echo "Error";
             break;
-        }
-      } elseif ($number > 20) {
-        switch ($firstDigit) {
-          case 2:
+    }
+} elseif ($number > 20) {
+    switch ($firstDigit) {
+        case 2:
             $numberFirstPart = $two;
             break;
-          case 3:
+        case 3:
             $numberFirstPart = $three;
             break;
-          case 4:
+        case 4:
             $numberFirstPart = $four;
             break;
-          case 5:
+        case 5:
             $numberFirstPart = $five;
             break;
-          case 6:
+        case 6:
             $numberFirstPart = $six;
             break;
-          case 7:
+        case 7:
             $numberFirstPart = $seven;
             break;
-          case 8:
+        case 8:
             $numberFirstPart = $eight;
             break;
-          case 9:
+        case 9:
             $numberFirstPart = $nine;
             break;
-          default:
+        default:
             echo "Error";
             break;
-        }
+    }
 
-        switch ($secondDigit) {
-            case 1:
-              $numberLastPart = $one;
-              break;
-            case 2:
-              $numberLastPart = $two;
-              break;
-            case 3:
-              $numberLastPart = $three;
-              break;
-            case 4:
-              $numberLastPart = $four;
-              break;
-            case 5:
-              $numberLastPart = $five;
-              break;
-            case 6:
-              $numberLastPart = $six;
-              break;
-            case 7:
-              $numberLastPart = $seven;
-              break;
-            case 8:
-              $numberLastPart = $eight;
-              break;
-            case 9:
-              $numberLastPart = $nine;
-              break;
-            default:
-              echo "Error";
-              break;
-          }
-          echo "$number - " . $numberFirstPart . $tens . $numberLastPart;
+    switch ($secondDigit) {
+        case 1:
+            $numberLastPart = $one;
+            break;
+        case 2:
+            $numberLastPart = $two;
+            break;
+        case 3:
+            $numberLastPart = $three;
+            break;
+        case 4:
+            $numberLastPart = $four;
+            break;
+        case 5:
+            $numberLastPart = $five;
+            break;
+        case 6:
+            $numberLastPart = $six;
+            break;
+        case 7:
+            $numberLastPart = $seven;
+            break;
+        case 8:
+            $numberLastPart = $eight;
+            break;
+        case 9:
+            $numberLastPart = $nine;
+            break;
+        default:
+            echo "Error";
+            break;
+    }
+    echo "$number - " . $numberFirstPart . $tens . $numberLastPart;
 
-    } elseif ($number > 10 && $number < 20) {
-        switch ($secondDigit) {
-          case 1:
+} elseif ($number > 10 && $number < 20) {
+    switch ($secondDigit) {
+        case 1:
             $numberFirstPart = $one;
             break;
-          case 2:
+        case 2:
             $numberFirstPart = $two;
             break;
-          case 3:
+        case 3:
             $numberFirstPart = $three;
             break;
-          case 4:
+        case 4:
             $numberFirstPart = $four;
             break;
-          case 5:
+        case 5:
             $numberFirstPart = $five;
             break;
-          case 6:
+        case 6:
             $numberFirstPart = $six;
             break;
-          case 7:
+        case 7:
             $numberFirstPart = $seven;
             break;
-          case 8:
+        case 8:
             $numberFirstPart = $eight;
             break;
-          case 9:
+        case 9:
             $numberFirstPart = $nine;
             break;
-          default:
+        default:
             echo "Error";
             break;
-        }
-      
-        echo "$number - " . $numberFirstPart . $toista;
-      }
+    }
 
-    ?>
+    echo "$number - " . $numberFirstPart . $toista;
+}
+
+?>
 
 </body>
 
