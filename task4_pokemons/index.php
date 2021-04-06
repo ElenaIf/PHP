@@ -22,7 +22,9 @@ $pokemons_original = file_get_contents('data.json');
 $pokemons_json = json_decode($pokemons_original, true);
 $pokemons_array = $pokemons_json['results'];
 
+// I use the method array_chunk to split the array into chunks of 50
 $pokemons_array_limited = array_chunk($pokemons_array, 50);
+
 echo "<p>The total number of availiable pokemons is " . count($pokemons_array) . "</p>";
 
 if ($_GET != null && $_GET['group'] != null) {
