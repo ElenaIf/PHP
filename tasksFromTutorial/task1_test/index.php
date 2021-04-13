@@ -12,8 +12,12 @@
 
     <?php
     $phrase = "Hello world, how are you?";
+    echo "<p>The phrase is: " . $phrase . "</p>"; 
     echo "<p>The phrase is in uppercase: " . strtoupper($phrase) . "</p>"; // to make string uppercase
     echo "<p> The length of the string is " . strlen($phrase) . "</p>"; // to show the length of the string
+    echo "<p> Number of words is " . str_word_count($phrase) . "</p>"; // to count how many words in the string
+    echo "<p> The position of 'how' is: " . strpos($phrase, "how") . "</p>"; // to count how many words in the string
+    echo "<p> Reverse string is " . strrev($phrase) . "</p>"; // to reverse the string
     echo "<p>One of the characters is " . $phrase[0] . "</p>";
     $phrase[7] = "E";  // replace one character in the string
     echo "<p>After modification " . $phrase . "</p>";
@@ -52,6 +56,11 @@ echo "<br>";
 echo ceil(3.3); // rounded to the bigger number
 echo "<br>";
 echo floor(3.7); // will round down
+echo "<br>";
+$x = 10;
+echo "X variable is: " . $x++; // there is a difference between ++$x and $x++ !
+echo "<br>";
+echo $x;
  ?>
 
 </body>

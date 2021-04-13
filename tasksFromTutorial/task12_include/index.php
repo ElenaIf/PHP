@@ -1,3 +1,9 @@
+<?php
+//we include it on top so that the docuemnt with functions loads before the rest of the document
+include "functions.php";
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -18,7 +24,7 @@ include "header.html";
 <p>Hello from main!</p>
 <?php
 
-$title = "My blogpost" ;
+$title = "My blogpost";
 $author = "Lena";
 $word_count = 400;
 
@@ -28,11 +34,14 @@ include "article.php";
 ?>
 <?php
 
-$title = "My blogpost 2" ;
+$title = "My blogpost 2";
 $author = "Anna";
 $word_count = 200;
 
 include "article.php";
+//This is a function from the included php docuement with functions
+someFunction();
+
 ?>
 </main>
 

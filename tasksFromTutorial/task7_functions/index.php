@@ -11,21 +11,23 @@
 
     <?php
 
-function say_hi($name, $age){
+function say_hi($name, $age)
+{
     echo "Hello, $name, you are $age";
 };
 
 say_hi("Lena", 33);
 echo "<br>";
 say_hi("Petrovich", 50);
-    ?>
+?>
 
 <h2>Return statements</h2>
 
-<?php 
+<?php
 
-function cube($num) {
-return $num * $num * $num;
+function cube($num)
+{
+    return $num * $num * $num;
 // The function is not executed any more after the return keyword. Everything that will come after will be ignored
 };
 

@@ -17,25 +17,25 @@
 
 $grade = $_POST["grade"];
 
-switch($grade){
+switch ($grade) {
     case "A":
         echo "<p> Your grade is " . $grade . " and you did amazing!</p>";
         break;
-        case "B":
-            echo "<p> Your grade is " . $grade . " and you did pretty good</p>";
-            break;
-            case "C":
-                echo "<p> Your grade is " . $grade . " and you did OK</p>";
-                break;
-                case "D":
-                    echo "<p> Your grade is " . $grade . " and you did quite bad</p>";
-                    break;
-                    case "F":
-                        echo "<p> Your grade is " . $grade . " and you failed</p>";
-                        break;
-                        default:
-                        echo "<p> Invalid grade</p>";
-                        break;
+    case "B":
+        echo "<p> Your grade is " . $grade . " and you did pretty good</p>";
+        break;
+    case "C":
+        echo "<p> Your grade is " . $grade . " and you did OK</p>";
+        break;
+    case "D":
+        echo "<p> Your grade is " . $grade . " and you did quite bad</p>";
+        break;
+    case "F":
+        echo "<p> Your grade is " . $grade . " and you failed</p>";
+        break;
+    default:
+        echo "<p> Invalid grade</p>";
+        break;
 };
 
 ?>

@@ -14,6 +14,8 @@
     $is_orange = true;
     $is_round = false;
 
+    //one more logical operator - xor - checks if only one parameter is correct. If both are correct, returns false
+
     if ($is_orange && $is_round) {
         echo "Color is orange and shape is round";
         // if it is orange and NOT round (!)
