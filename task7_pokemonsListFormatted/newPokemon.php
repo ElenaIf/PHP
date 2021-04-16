@@ -11,29 +11,42 @@
         </select>
         <button type="submit">Submit</button>
     </form>
-<?php
-if (isset($error)) {
-    echo $error;
-}?>
+
 
 <?php
-
-$message = "";
-$error = "";
 
 $current_data = file_get_contents("data.json");
 
-$decoded_data = json_decode($current_data, true);
+$formatted_data = json_decode($current_data, true);
 
-$array_data = $decoded_data["results"];
+$results = $formatted_data['results'];
 
-$newArray = array(
+$formatted_results = array();
+
+for ($i = 0; $i < count($results); $i++) {
+    $formatted_results[$i]['name'] = strtoupper($results[$i]['name']);
+    $formatted_results[$i]['url'] = $results[$i]['url'];
+}
+
+$new_pokemons_array = array(
     "name" => $_POST["pokemonName"],
     "type" => $_POST["pokemonType"],
+    "url" => "something",
 );
-$array_data[] = $newArray;
-$final_data = json_encode($array_data);
+array_push($formatted_results, $new_pokemons_array);
 
-file_put_contents("data.json", $final_data);
+$formatted_data['results'] = $formatted_results;
+
+$json_formatted_data = json_encode($formatted_data);
+
+// $formatted_results[] = $new_pokemons_array;
+
+echo ($json_formatted_data);
+
+$write_down_new_pokemon = file_put_contents("data.json", $json_formatted_data);
+
+// $final_data = json_encode($results);
+
+// file_put_contents("data.json", $final_data);
 
 ?>
