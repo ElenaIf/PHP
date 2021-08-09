@@ -1,0 +1,26 @@
+{
+	"recipes": [
+		{
+			"id": 1,
+			"name": "pancakes"
+		},
+		{
+			"id": 2,
+			"name": "soup"
+		},
+		{
+			"deserts": [
+				{
+					"id": "des1",
+					"name": "cake"
+				}
+			]
+		}
+	],
+	"soups": [
+		{
+			"id": "soup1",
+			"name": "the best soup"
+		}
+	]
+}

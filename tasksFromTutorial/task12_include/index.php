@@ -49,5 +49,7 @@ someFunction();
 include "footer.html";
 ?>
 
+<!-- include_once - includes the document only once. Can be useful for example in loops. So that the document is included only once during one run -->
+
 </body>
 </html>

@@ -26,6 +26,9 @@
    echo $_GET["num1"] + $_GET["num2"];
 //note that submitted information appears in url of the page
     };
+
+    // another option is to use isset()
+    // if (isset($_GET['submit])){}
     ?>
 
 </body>

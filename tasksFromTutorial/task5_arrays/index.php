@@ -55,6 +55,25 @@ echo $_POST["student"] . " got " . $grades[$_POST["student"]];
 ?>
 
 
+<?php 
+
+echo "<h3>More about arrays - adding data</h3>";
+
+$data = array("First", "Second");
+// adding data into array
+$data[] = "Daniel";
+$data[] = 20;
+echo "<br>";
+echo $data[0];
+echo "<br>";
+// to print the whole array
+print_r($data);
+
+array_push($data, "Lena", 15, "One");
+echo "<br>";
+print_r($data);
+
+?>
 
 </body>
 </html>

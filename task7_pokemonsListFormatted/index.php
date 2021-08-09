@@ -9,6 +9,7 @@
 	</head>
 	<body>
 		<h1>Pokemon list</h1>
+	
 		<button id="back">Back</button>
 		<button id="next">Next</button>
 		<div id="pokemonContainer"></div>
